@@ -1,0 +1,23 @@
+.listHead{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.listHead > label {
+    font-weight: bold;
+}
+
+.listBody {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.listBody > label {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
