@@ -17,7 +17,7 @@ export default function MachineDetails () {
 		state.machine.data.find(machine => machine.id === id)
 	)
 	const getMachines = useCallback(() => dispatch(machinesActions.get(id)), [
-		dispatch
+		dispatch, id
 	])
 	const updateMachines = useCallback(
 		props => dispatch(machinesActions.update(props)),

@@ -20,12 +20,14 @@ export default function Machines() {
 
 	useEffect(() => {
 		getMachines()
-		UpdatingData()
 
-		return () => ws.close()
 	}, [getMachines])
 
-
+	useEffect(() => {
+		UpdatingData()
+		return () => ws.close()
+	})
+	
 	const viewDetails = (value) => {
 		history.push(`/machines/${value.id}`)
 	}
